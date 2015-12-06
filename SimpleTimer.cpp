@@ -235,6 +235,14 @@ void SimpleTimer::toggle(int numTimer) {
     enabled[numTimer] = !enabled[numTimer];
 }
 
+void SimpleTimer::changeInterval(int numTimer, long d) {
+    if (numTimer >= MAX_TIMERS) {
+        return;
+    }
+    
+    delays[numTimer] = d;
+    prev_millis[numTimer] = elapsed();
+}
 
 int SimpleTimer::getNumTimers() {
     return numTimers;

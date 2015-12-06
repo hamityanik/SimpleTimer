@@ -79,6 +79,9 @@ public:
     // enables the specified timer if it's currently disabled,
     // and vice-versa
     void toggle(int numTimer);
+    
+    // changes the specified timer interval
+    void changeInterval(int numTimer, long d);
 
     // returns the number of used timers
     int getNumTimers();
