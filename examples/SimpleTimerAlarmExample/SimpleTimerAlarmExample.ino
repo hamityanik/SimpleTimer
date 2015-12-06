@@ -9,6 +9,8 @@
  *
  */
 
+// Limiting timer count for freeing dynamic memory
+#define MAX_TIMERS 5
 #include <SimpleTimer.h>
 
 // There must be one global SimpleTimer object.
